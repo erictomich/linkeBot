@@ -1,7 +1,8 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+import puppeteer from 'puppeteer';
+import fs from 'fs';
+
 let counter = 1;
-console.log('LinkeBot Iniciado, abra o arquivo Index.HTML 🤖🔎')
+console.log('LinkeBot Iniciado 🤖🔎')
 
 async function pupper() {
   
@@ -21,7 +22,7 @@ async function pupper() {
   }); 
 
 
-  fs.writeFile('./back/data.json', JSON.stringify(list, null, 2), err => {
+  fs.writeFile('./data.json', JSON.stringify(list, null, 2), err => {
       if (err) throw new Error('Alguma coisa deu errada')
 
       console.log(`Vagas atualizadas 👌🏻${counter ++} vezes`);
@@ -31,8 +32,9 @@ async function pupper() {
   await browser.close();
 };
 
-function runBot (){
+export function runBot (){
     setInterval(pupper, 19000)
 }
 
 runBot();
+

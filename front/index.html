@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="normal">
-    <img src="../assets/LinkedIn_Logo.svg.png" class="logo" />
+    <img src="./assets/LinkedIn_Logo.svg.png" class="logo" />
     <button class="darkmode">🌖</button>
     <div class="container"></div>
 
@@ -40,7 +40,7 @@
       console.log("Buscando vagas...");
 
       async function showPics() {
-        const response = await fetch("../back/data.json");
+        const response = await fetch("./data/data.json");
 
         const data = await response.json();
         
