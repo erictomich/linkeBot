@@ -26,8 +26,7 @@ E para corrigir isso foi criado um filtro nos elementos retornado que tivessem p
 - `git clone` no link do repositório
 - Instalado em sua máquina você precisará instalar as dependencias do projeto.
 - `npm install`
-- Execute o arquivo `main.js` direto no node ou no terminal.
-- Após a primeira execução, abra o arquivo `index.html`
+- `node app.js`.
 
 
  
@@ -42,3 +41,7 @@ E para corrigir isso foi criado um filtro nos elementos retornado que tivessem p
 [LinkedIn](https://www.linkedin.com/in/fabiodeandrad/) 
 [Medium](https://medium.com/@fabioscript)
 [E-mail](fabiodeandradecontato@gmail.com)
+
+### Adaptado por Eric
+
+Eric Tomich
