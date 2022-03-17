@@ -16,5 +16,5 @@ app.get('/datajson', (req, res) => {
 runBot();
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Acesse o projeto em: http://localhost:${port}/index.html`)
   })
